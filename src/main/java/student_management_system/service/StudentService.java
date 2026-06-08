@@ -7,6 +7,8 @@ import student_management_system.repository.StudentRepository;
 import student_management_system.entity.Course;
 import student_management_system.repository.CourseRepository;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class StudentService {
@@ -29,6 +31,11 @@ public class StudentService {
         student.getCourses().add(course);
 
         return repository.save(student);
+    }
+    public List<Student> searchStudents(String name) {
+
+        return repository
+                .findByNameContainingIgnoreCase(name);
     }
 }
 
