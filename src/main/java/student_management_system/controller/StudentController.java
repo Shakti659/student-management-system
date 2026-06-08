@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import student_management_system.entity.Student;
 import student_management_system.service.StudentService;
+import student_management_system.dto.AssignCourseRequest;
 
 @RestController
 @RequestMapping("/students")
@@ -20,5 +21,13 @@ public class StudentController {
             @RequestBody Student student){
 
         return service.save(student);
+    }
+    @PostMapping("/assign-course")
+    public Student assignCourse(
+            @RequestBody AssignCourseRequest request) {
+
+        return service.assignCourse(
+                request.getStudentId(),
+                request.getCourseId());
     }
 }
