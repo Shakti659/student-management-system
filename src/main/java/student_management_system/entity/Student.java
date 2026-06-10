@@ -29,6 +29,13 @@ public class Student {
     private String name;
     private LocalDate dateOfBirth;
     private String gender;
+    private String email;
+
+    private String mobileNumber;
+
+    private String fatherName;
+
+    private String motherName;
 
     @OneToMany(
             cascade = CascadeType.ALL,
