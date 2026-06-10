@@ -36,6 +36,8 @@
 
 ✅ Tested via Postman
 
+✅ Student Profile Update
+
 ### In Progress
 
 🚧 Course Assignment API
