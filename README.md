@@ -38,11 +38,13 @@
 
 ✅ Student Profile Update
 
-### In Progress
+✅ Course Assignment API
 
-🚧 Course Assignment API
+✅ Leave Course API
 
-🚧 Search APIs
+✅ Search Student By Name
+
+✅ Search Students By Course
 
 ### Pending
 
